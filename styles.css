@@ -1,0 +1,405 @@
+:root {
+    --main-bg-color:#63c8d3 ;
+    --blak-color: #000;
+    --margin: 0px;
+    --padding: 0px;
+    --white-main-color: #fff;
+    --light-grey-color: #747474;
+    --dark-grey-color: rgb(69, 67, 79);
+    --very-light-grey: rgb(218, 218, 218);
+
+     
+}
+body{
+    margin: var(--margin);
+    padding: var(--padding);
+    box-sizing:border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+    
+}
+#main {
+ width: 100%;
+ height: 100vh;
+ position: relative;   
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: var(--white-main-color);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+.menue {
+
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+   
+}
+a {
+    text-decoration: none;
+}
+
+nav ul  li a {
+    
+    margin: 3px;
+    padding: 0px 22px;
+    display: flex;
+    text-transform: uppercase;
+    font-weight:normal;
+    letter-spacing: 1px;
+    line-height: 40px;
+    color: var( --light-grey-color)
+
+}
+nav ul  li a:hover {
+    background-color: var(--main-bg-color);
+    color: var(--white-main-color);
+    border-radius: 20px;
+
+}
+.get-in-touch {
+    color: var(--dark-grey-color);
+    font-weight: 500;
+    font-size: 0.9em;
+    border-bottom: 2px solid var(--main-bg-color);
+}
+.Logo-Heading {
+    font-weight: 500;
+    font-size: 30px;
+    color: var(--dark-grey-color);
+
+}
+.Name {
+    font-weight: 1000;
+    color: var(--blak-color);
+    border-bottom: 2px solid var(--main-bg-color);
+
+}
+.image {
+    width: 2px;
+    length: 2px;
+}
+#content {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
+    
+}
+.modle {
+    height: 500px;
+    width: 500px;
+}
+.modle img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.description h1 {
+    font-size: 50px;
+    margin: 0px 0px 10px 0px;
+    line-height: 60px;
+
+}
+.description p {
+    color: var(--light-grey-color);
+}
+.portfolio-button {
+    width: 200px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white-main-color);
+    background-color: var(--main-bg-color) ;
+    border-radius: 20px;
+
+}
+#skills {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin: auto auto 50px auto;
+}
+.skill-image{
+   width: 45%;
+}
+.skill-image img {
+    width:100%;
+    height: 100%;
+    object-fit: contain;
+}
+.skill-heading span {
+    color: var(--main-bg-color);
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 1px;
+
+}
+.skill-heading h2{
+    color: var(--blak-color);
+    font-size: 45px;
+    margin: 0px;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+}
+.s-box-container {
+    margin-top: 15px;
+}
+.s-box {
+    display: flex;
+    margin: 25px 0px;
+}
+.s-box-icon {
+    margin-right: 15px;
+    font-size: 25px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: var(--light-grey-color);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    color: var(--main-bg-color);
+}
+.s-box-text strong {
+    color:  var(--dark-grey-color) ;
+    font-weight: 1000;
+}
+#my-projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    margin: auto auto 10% auto;
+    flex-direction: column;
+}
+.project {
+    width: 300px;
+    height: 200px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px 0px;
+
+}
+.one {
+    background-image: url(images.png);
+    background-size: contain;
+}
+.project #hide {
+    visibility: hidden;
+    background-color: var(--white-main-color);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    opacity: 100%;
+    z-index: 1000;
+
+
+}
+.project:hover #hide {
+    visibility: visible;
+    border: 1px solid black;
+
+}
+.two {
+    background-image: url(Netflix-Logo.png);
+    background-size: contain;
+}
+.three {
+    background-image: url(1_c0FaLqy4tcO1uuYLP8AWBw.jpeg);
+    background-size: contain;
+}
+.project-showcase {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-wrap: wrap;
+
+
+}
+.project-text {
+    color: var(--dark-grey-color);
+    font-size: 30px;
+    padding: 20px;
+    justify-content: space-around;
+}
+.project-btn {
+    background-color: var(--blak-color);
+    border: 2px solid var(--blak-color);
+    color: var(--white-main-color);
+    border-radius: 5px;
+    padding: 5px;
+
+}
+.project-btn:hover {
+    background-color: var(--white-color);
+    border: 1px solid var(--blak-color);
+    color: var(--black-main-color);
+    cursor: pointer;
+
+}
+/* client section */
+#client {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    margin: auto auto 50px auto;
+    padding: 50px 0px;
+
+
+}
+.c-box-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0px;
+    flex-wrap: wrap;
+
+}
+.client-box {
+    width: 300px;
+    height: 350px;
+    border-radius: 10px;
+    background-color: var(--very-light-grey);
+    color:var(--blak-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    margin: 20px;
+
+}
+.client-box img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: var(--white-main-color);
+    object-fit: contain;
+    border: 1px solid var(--white-main-color);
+}
+.star {
+    display: flex;
+    margin: 10px 0px 0px 0px;
+
+}
+.star i {
+    color: gold;
+}
+.client-box p {
+    color:var(--black-main-color);
+    font-size: 14px;
+    margin: 10px 0px;
+    text-align: center;
+
+
+}
+.client-box a{
+    width: 90px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--main-bg-color);
+    background-color: var(--white-main-color);
+    border: 5px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 1px solid white;
+
+}
+
+.client-box a:hover {
+    color: white;
+    background-color: var(--main-bg-color);
+    border-radius: 5px;
+}
+
+
+/* contact us */
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    margin: auto auto 50px auto;
+
+
+}
+#contact img {
+    width: 50%;
+
+}
+#contact h3 {
+    font-size: 32px;
+    margin: 20px;
+
+}
+.contact-input {
+    width: 500px;
+    height: 50px;
+
+    background-color: var(--white-main-color) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.contact-input input{
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    text-align: center;
+    color: var(--dark-grey-color);
+
+} 
+.contact-input a {
+    width: 200px;
+    height: 40px;
+    background: var(--main-bg-color);
+    color: var(--white-main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin: auto 10px;
+
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid var(--main-bg-color);
+}
+html {
+    scroll-behavior: smooth;
+}
